@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        font-family: Arial;
+        background: blue;
+        color: white;
+    }
+
+    .registration{
+        width: 90%;
+        max-height: 600px;
+        margin: auto;
+        padding: 40px 20px;
+        color: gold;
+    }
+
+    .registration h1{
+        font-size: 60px;
+        line-height: 1.05;
+        margin-bottom: 20px;
+        text-shadow: 3px 8px black;
+    }
+
+    .form-group{
+        margin-bottom: 45px;
+    }
+
+    .form-group label{
+        display: block;
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .form-group input{
+        width: 90;
+        height: 85px;
+        padding: 6px;
+        font-size: 20px;
+        border: 1px solid gold;
+        border-radius: 10px;
+        background:#fffafa;
+        box-shadow: 3px 8px gold;
+        outline: none;
+    
+    }
+
+    .form-group input:focus{
+        border-color: gold;
+    }
+
+
+    .gender{
+        margin-top: 10px;
+    }
+    .gender h2{
+        font-size: 30px;
+        margin-bottom: 25px;
+    }
+
+    .gender label{
+        display: block;
+        font-size: 25px;
+        font-weight: normal;
+        margin-bottom: 20px;
+    }
+
+    .gender input{
+        width: 25px;
+        height: 25px;
+        margin-left: 15px;
+    }
+
+    .submit{
+        display: block;
+        margin:auto;
+        border-radius: 30px;
+        font-size: 20px;
+        padding: 20px;
+        margin-top: 80px;
+
+    }
+
+</style>
+
+</head>
+<body>
+    <form></form>
+       
+       <div class="registration">
+        <h1>Registeration form</h1>
+        </div>
+        
+            <div class="form-group">
+        <label for="FirstName">First Name * </label>
+        <input type="text">
+        </div>
+        
+        <div class="form-group">
+        <label for="Surname">Surname Name *</label>
+        <input type="text">
+        </div>
+
+        <div class="form-group">
+            <label for="email">email *</label>
+            <input type=""text required>
+        </div>
+
+        <div class="form-group">
+            <label for="Mobile number">Mobile number *</label>
+            <input type="number" required>
+        </div>
+
+        
+        <div class="form-group">
+            <label for="address">Address *</label>
+            <input type="text" required>
+        </div>
+
+        <div class="gender">
+            <h2>Gender *</h2>
+            <label><input type="checkbox" required> Male</label>
+
+            <label><input type="checkbox" required> Female</label>
+        </div>
+
+        <div class="form-group">
+            <label for="DOB">DOB *</label>
+            <input type="date" required>
+        </div>
+
+        <div class="form-group">
+            <label for="Country">Country *</label>
+            <select name="Country">
+                <option value="">Nigeria</option>
+                <option value="">Niger</option>
+                <option value="">Chad</option>
+                <option value="">Ghana</option>
+                <option value="">Cameroon</option>
+            </select>
+    
+           <div> 
+            <button class="submit">
+            <h2>submit</h2>
+           </button>
+            </div>
+        </div>
+        
+    
+</body>
+</html>
